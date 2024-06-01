@@ -4,7 +4,7 @@ import Login from './pages/Login.jsx';
 
 const router = createBrowserRouter([
   {
-    path: '/login',
+    path: '/workbench',
     element: <Login />,
   },
 ]);
