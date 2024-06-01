@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://xianzhezhang97.github.io/login",
+  "homepage": "https://xianzhezhang97.github.io/workbench",
   "dependencies": {
     "@flaticon/flaticon-uicons": "^3.2.1",
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
