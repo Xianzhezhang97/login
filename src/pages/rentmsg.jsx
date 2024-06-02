@@ -80,10 +80,10 @@ ${item.Sender}
       <p className='flex justify-center w-full px-6 py-3 text-xl text-center'>
         欢迎访问受保护的页面
       </p>
-      <table className='relative w-full text-left text-gray-500 rtl:text-right dark:text-gray-400'>
+      <table className='relative w-full text-left text-gray-500 rtl:text-right darrk:text-gray-400'>
         <thead
           ref={theadRef}
-          className='text-[20px] bg-sky-700 text-sky-100 uppercase dark:bg-gray-700 dark:text-gray-400 fixed top-0 z-10 w-full'
+          className='text-[20px] bg-sky-700 text-sky-100 uppercase darrk:bg-gray-700 darrk:text-gray-400 fixed top-0 z-10 w-full'
         >
           <tr className=''>
             <th scope='col' className='p-4 w-[3%]'>
@@ -91,7 +91,7 @@ ${item.Sender}
                 <input
                   id='checkbox-all-search'
                   type='checkbox'
-                  className='w-8 h-8 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600'
+                  className='w-8 h-8 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 darrk:focus:ring-blue-600 darrk:ring-offset-gray-800 darrk:focus:ring-offset-gray-800 focus:ring-2 darrk:bg-gray-700 darrk:border-gray-600'
                 />
                 <label htmlFor='checkbox-all-search' className='sr-only'>
                   checkbox
@@ -114,7 +114,7 @@ ${item.Sender}
           {RawData.map((item, index) => (
             <tr
               key={index}
-              className='border-b text-[20px] dark:bg-gray-800 dark:border-gray-700 hover:bg-sky-50 dark:hover:bg-gray-600 w-[1%]'
+              className='border-b text-[20px] darrk:bg-gray-800 darrk:border-gray-700 hover:bg-sky-50 darrk:hover:bg-gray-600 w-[1%]'
             >
               <td className='p-4'>
                 <div className='flex items-center'>
@@ -123,19 +123,19 @@ ${item.Sender}
                     checked={checkedState[index]}
                     onChange={() => handleRowClick(index, item)}
                     type='checkbox'
-                    className='w-8 h-8 text-green-600 bg-green-100 border-gray-300 rounded-full dark:focus:ring-green-600 dark:ring-offset-green-800 dark:focus:ring-offset-green-800 focus:ring-2 dark:bg-green-700 dark:border-green-600'
+                    className='w-8 h-8 text-green-600 bg-green-100 border-gray-300 rounded-full darrk:focus:ring-green-600 darrk:ring-offset-green-800 darrk:focus:ring-offset-green-800 focus:ring-2 darrk:bg-green-700 darrk:border-green-600'
                   />
                 </div>
               </td>
-              <td className='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center w-[7%]'>
+              <td className='px-6 py-4 font-medium text-gray-900 whitespace-nowrap darrk:text-white text-center w-[7%]'>
                 {index + 1}
               </td>
-              <td className='gap-y-[30px] px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white w-[7%]'>
+              <td className='gap-y-[30px] px-6 py-4 font-medium text-gray-900 whitespace-nowrap darrk:text-white w-[7%]'>
                 <a
                   href={item['Oringinal Link']}
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='text-blue-600 dark:text-blue-400'
+                  className='text-blue-600 darrk:text-blue-400'
                 >
                   {item['property address']}
                 </a>
@@ -147,7 +147,7 @@ ${item.Sender}
                   layout
                   type='button'
                   onClick={() => handleRowClick(index, item)}
-                  className={`flex justify-center items-center text-white bg-gradient-to-r ${checkedState[index] ? 'bg-gray-400 w-auto hover:from-sky-500 hover:via-sky-600 hover:to-sky-700' : 'w-full from-sky-500 via-sky-600 to-sky-700'} hover:bg-gradient-to-br dark:focus:ring-sky-800 font-medium rounded-lg text-2xl px-5 py-2.5 text-center me-2 mb-2`}
+                  className={`flex justify-center items-center text-white bg-gradient-to-r ${checkedState[index] ? 'bg-gray-400 w-auto hover:from-sky-500 hover:via-sky-600 hover:to-sky-700' : 'w-full from-sky-500 via-sky-600 to-sky-700'} hover:bg-gradient-to-br darrk:focus:ring-sky-800 font-medium rounded-lg text-2xl px-5 py-2.5 text-center me-2 mb-2`}
                 >
                   {checkedState[index]
                     ? 'Mark as UNFINISH'
